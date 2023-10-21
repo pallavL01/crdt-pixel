@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <title>Collaborative Pixel Art Editor</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="canvases">
+        <canvas class="canvas" id="alice"></canvas>
+        <canvas class="canvas" id="bob"></canvas>
+      </div>
+      <input class="color" type="color" value="#000000" />
+    </div>
+
+    <style>
+      body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .wrapper {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .canvases {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .canvas {
+        width: 25rem;
+        height: 25rem;
+        border: 0.25rem solid #eeeeee;
+        border-radius: 0.25rem;
+        cursor: crosshair;
+      }
+
+      .color {
+        border: 0;
+      }
+    </style>
+
+    <script src="src/index.ts"></script>
+  </body>
+</html>
